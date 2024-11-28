@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/flechegauche"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/toute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toutes"/>
+        <Button
+            android:id="@+id/jaket"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jakets"/>
+        <Button
+            android:id="@+id/sprdila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sprdilas"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/recherche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_search"
+        android:background="@drawable/edittext_circle"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:layout_marginHorizontal="5dp"
+        android:padding="20dp"
+        android:hint="Entrer le name de produit"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/recycler"/>
+</LinearLayout>

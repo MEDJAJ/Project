@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Couleur de fond   <shape> définit un élément graphique (forme) que vous pouvez appliquer comme fond à une View. -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Bordures arrondies -->
+    <corners android:radius="10dp" />
+
+    <!-- Style de la bordure -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" />
+</shape>
